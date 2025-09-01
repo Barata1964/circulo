@@ -1,8 +1,9 @@
 button{
     border: none;
-    background-color: transparent;
     cursor: pointer;
 }
+
+
 #a{
     width: 200px;
     height: 200px;
@@ -10,13 +11,34 @@ button{
     border: 6px solid orange;
     border-radius: 50%;
     border-top: 6px solid yellow;
+    background-color: transparent;
 }
 @keyframes a {
     from {
-        transform: rotateZ(0deg);
+        transform: rotateZ(0deg)
     }
     to {
-        transform: rotateZ(360deg);
+        transform: rotateZ(360deg)
+    }
+}
+#b{
+    width: 200px;
+    height: 200px;
+    animation: b 2s infinite alternate;
+    background-color:blue;
+    border-radius: 50%;
+    transition: background 0.5s ease ;
+}
+#b:hover{
+    background-color:red;
+
+}
+@keyframes b {
+    from {
+        transform:translateX(0px) translateY(0px);
+    }
+    to {
+        transform:translateX(200px) translateY(200px);
     }
 }
 h1{
